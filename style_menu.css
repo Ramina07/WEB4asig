@@ -1,0 +1,117 @@
+/* === GLOBAL SETTINGS === */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f5f5;
+  color: #333;
+}
+.container {
+  
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header header"
+    "sidebar main-content"
+    "footer footer";
+  gap: 20px;
+  padding: 20px;
+  
+}
+.intro-section{
+  background-color: #f8f8f8;;
+}
+
+nav{
+  background-color: #b22222;
+  color: #fff;
+}
+nav a{
+  color: #fff;
+}
+nav a:hover{
+  color:#ead4d4;
+}
+.sidebar {
+  grid-area: sidebar;
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(178, 34, 34, 0.15);
+  height: calc(100vh - 100px);
+  top: 80px; 
+}
+/* === MENU HEADER === */
+.bowl-img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  
+  animation: bowlSpin 10s linear infinite;
+}
+
+@keyframes bowlSpin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+/* === SECTION HEADERS === */
+h3 {
+  border-bottom: 2px solid#b22222;
+  opacity: 1;;
+  padding-bottom: 5px;
+}
+
+/* === CARDS === */
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* === MENU SECTION === */
+.menu-section {
+  background-color: #b72e3c;
+}
+
+.menu-card {
+  background-color: #ead4d4;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.menu-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.4s ease;
+}
+
+.menu-card:hover .menu-img {
+  transform: scale(1.05);
+}
+
+.menu-card h5 {
+  margin-top: 10px;
+}
+
+.menu-section h2 {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* === FOOTER === */
+footer {
+  background-color: #b22222;
+  opacity: 1;
+  color: #fff;
+}
