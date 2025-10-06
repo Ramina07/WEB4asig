@@ -2,171 +2,148 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Sakura Bowl - Home</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Oishiro | Homee</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style_home.css">
 </head>
-<body class="home-page">
-  <div class="container">
+<body>
 
 
-    <!-- Header -->
-    <header class="header">
-      <nav>
-        <div class="logo">Oishoro</div>
-        <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="indexr.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
 
-
-    <!-- Sidebar -->
-    <aside class="sidebar">
-      <h3>Navigation</h3>
-      <ul>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="indexr.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold text-white" href="index.html">Oishiro</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="indexr.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
       </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- GRID LAYOUT -->
+<div class="container-fluid mt-4">
+  <div class="row">
+    <!-- SIDEBAR -->
+    <aside class="col-lg-3 col-md-4">
+      <div class="sidebar p-4 bg-white shadow-sm rounded-4">
+        <h4 class="text-danger fw-bold mb-3">Sections</h4>
+        <ul class="list-unstyled fs-5">
+          <li><a href="menu.html" class="text-dark text-decoration-none d-block py-1">Soups & Ramen</a></li>
+          <li><a href="menu.html" class="text-dark text-decoration-none d-block py-1">Main Courses</a></li>
+          <li><a href="menu.html" class="text-dark text-decoration-none d-block py-1">Desserts</a></li>
+        </ul>
+      </div>
     </aside>
 
 
-    <!-- Main -->
-    <main class="main-container">
-      <!-- Hero -->
-      <section id="main-hero" class="hero">
-        <div class="hero-left">
-          <h1>Welcome to Oishiro</h1>
-          <p>Authentic Japanese Cuisine with a Modern Twist</p>
-        </div>
-        <div class="hero-right">
-          <div class="hero-bowl-wrapper">
-            <img src="image/bowl_home.png" alt="Japanese Bowl" class="hero-bowl">
+
+  <!-- MAIN CONTENT -->
+<main class="col-lg-9 col-md-8">
+
+  <!-- === INTRO SECTION === -->
+  <section class="intro-section d-flex align-items-center justify-content-between flex-wrap p-4 rounded-4 shadow-sm bg-light-pink mb-5">
+    <div class="text-center text-md-start">
+      <h1 class="fw-bold text-danger mb-3">Welcome to Oishiro Restaurant</h1>
+      <p class="lead text-secondary mb-0">Experience authentic Japanese flavors crafted by master chefs.</p>
+    </div>
+    <img src="image/bowl_home.png" alt="Bowl" class="bowl-img img-fluid shadow-sm mt-3 mt-md-0">
+  </section>
+
+  <!-- === SEASON SPECIALS CAROUSEL === -->
+  <section class="specials-section mb-5 p-4 bg-white rounded-4 shadow-sm">
+    <h2 class="text-center text-danger mb-4">🌸 Season Specials 🌸</h2>
+    <div id="specialCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner rounded-4 overflow-hidden">
+
+        <div class="carousel-item active text-center">
+          <img src="image/ramen_deluxe.jpg" class="carousel-img d-block mx-auto" alt="Ramen Deluxe">
+          <div class="carousel-caption bg-dark bg-opacity-50 rounded p-2">
+            <h5>Ramen Deluxe</h5>
+            <p>Rich pork broth with noodles and seaweed.</p>
           </div>
         </div>
-      </section>
 
-
-      <!-- Story -->
-      <section class="story">
-        <img src="image/interier.jpg" alt="Restaurant Story">
-        <div>
-          <h2>Our Story</h2>
-          <p>
-            Oishiro restaurant was founded with a passion for authentic Japanese cuisine.
-            We bring fresh ingredients, traditional recipes, and modern presentation
-            to create an unforgettable dining experience.
-          </p>
+        <div class="carousel-item text-center">
+          <img src="image/ebi_tempura.jpg" class="carousel-img d-block mx-auto" alt="Tempura">
+          <div class="carousel-caption bg-dark bg-opacity-50 rounded p-2">
+            <h5>Ebi Tempura</h5>
+            <p>Crispy prawns served with dipping sauce.</p>
+          </div>
         </div>
-      </section>
 
-
-      <!-- Season Specials -->
-      <section class="new-dishes">
-  <h2>Season Specials</h2>
-  <div class="dish-grid">
-   
-    <div class="dish-card">
-      <img src="image/salmon_poke.jpg" alt="Salmon Poke">
-      <div class="overlay"><p>Fresh salmon poke bowl</p></div>
-      <h3>Salmon Poke</h3>
-      <p>¥1200</p>
-    </div>
-
-
-    <div class="dish-card">
-      <img src="image/tuna_roll.jpg" alt="Tuna Roll">
-      <div class="overlay"><p>Classic tuna sushi roll</p></div>
-      <h3>Tuna Roll</h3>
-      <p>¥950</p>
-    </div>
-
-
-    <div class="dish-card">
-      <img src="image/ramen_deluxe.jpg" alt="Ramen Deluxe">
-      <div class="overlay"><p>Deluxe ramen with shrimp and egg</p></div>
-      <h3>Ramen Deluxe</h3>
-      <p>¥1500</p>
-    </div>
-
-
-    <div class="dish-card">
-      <img src="image/sashimi_set.jpg" alt="Sashimi Set">
-      <div class="overlay"><p>Assorted fresh sashimi</p></div>
-      <h3>Sashimi Set</h3>
-      <p>¥1800</p>
-    </div>
-
-
-    <div class="dish-card">
-      <img src="image/tempura_mix.jpg" alt="Tempura Mix">
-      <div class="overlay"><p>Crispy tempura assortment</p></div>
-      <h3>Tempura Mix</h3>
-      <p>¥1100</p>
-    </div>
-
-
-    <div class="dish-card">
-      <img src="image/matcha_cheesecake.jpg" alt="Matcha Cheesecake">
-      <div class="overlay"><p>Sweet matcha cheesecake</p></div>
-      <h3>Matcha Cheesecake</h3>
-      <p>¥700</p>
-    </div>
-
-
-    <div class="dish-card">
-      <img src="image/ebi_tempura.jpg" alt="Ebi Tempura">
-      <div class="overlay"><p>Golden fried shrimp tempura</p></div>
-      <h3>Ebi Tempura</h3>
-      <p>¥1200</p>
-    </div>
-
-
-    <div class="dish-card">
-      <img src="image/maguro.jpg" alt="Maguro Sashimi">
-      <div class="overlay"><p>Fresh tuna sashimi</p></div>
-      <h3>Maguro Sashimi</h3>
-      <p>¥1500</p>
-    </div>
-
-
-    <div class="dish-card">
-      <img src="image/ice_cream.jpg" alt="Matcha Ice Cream">
-      <div class="overlay"><p>Creamy green tea ice cream</p></div>
-      <h3>Matcha Ice Cream</h3>
-      <p>¥600</p>
-    </div>
-
-
-  </div>
-</section>
-
-
-
-
-      <!-- Chefs -->
-      <section class="chefs">
-        <h2>Our Chefs</h2>
-        <div class="chef-grid">
-          <div class="chef-card"><img src="image/chef_1.jpg"><h3>Chef Hiroshi</h3><p>20 years experience</p></div>
-          <div class="chef-card"><img src="image/chef_2.jpg"><h3>Chef Aiko</h3><p>15 years experience</p></div>
-          <div class="chef-card"><img src="image/shef_3.jpg"><h3>Chef Kenji</h3><p>12 years experience</p></div>
+        <div class="carousel-item text-center">
+          <img src="image/tonkotsu_ramen.jpg" class="carousel-img d-block mx-auto" alt="Tonkotsu Ramen">
+          <div class="carousel-caption bg-dark bg-opacity-50 rounded p-2">
+            <h5>Tonkotsu Ramen</h5>
+            <p>Silky pork bone broth with tender noodles.</p>
+          </div>
         </div>
-      </section>
-    </main>
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#specialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#specialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+
+  <!-- === CHEFS SECTION === -->
+  <section class="chefs-section text-center p-4 bg-white rounded-4 shadow-sm">
+    <h2 class="text-danger mb-4">Our Master Chefs</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm h-100">
+          <img src="image/chef_1.jpg" class="card-img-top rounded-top-4" alt="Chef 1">
+          <div class="card-body">
+            <h5 class="card-title text-danger fw-bold">Chef Hiro Tanaka</h5>
+            <p class="card-text text-muted">20 years of sushi artistry.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm h-100">
+          <img src="image/chef_2.jpg" class="card-img-top rounded-top-4" alt="Chef 2">
+          <div class="card-body">
+            <h5 class="card-title text-danger fw-bold">Chef Emi Watanabe</h5>
+            <p class="card-text text-muted">15 years of ramen perfection.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm h-100">
+          <img src="image/shef_3.jpg" class="card-img-top rounded-top-4" alt="Chef 3">
+          <div class="card-body">
+            <h5 class="card-title text-danger fw-bold">Chef Kenji Sato</h5>
+            <p class="card-text text-muted">10 years in kaiseki cuisine.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
 
 
-    <!-- Footer -->
-    <footer class="footer">
-      <p>Team: Oishiro | Members: Li Danel, Kuzhentayeva Ramina</p>
-    </footer>
+  
 
 
-  </div>
+<!-- FOOTER -->
+<footer class="bg-danger text-white text-center py-3 mt-5">
+  <p class="mb-0">Team: Oishiro | Members: Li Danel, Kuzhentayeva Ramina</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
-
