@@ -1,171 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Menu | Food Vibes</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Oishiro | Menu</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style_menu.css">
 </head>
-<body class="menu-page">
+<body>
 
-
-  <div class="container">
-
-
-    <!-- Header -->
-    <header class="header">
-      <nav>
-        <div class="logo">Oishiro</div>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="menu.html" class="active">Menu</a></li>
-          <li><a href="index.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-
-
-    <!-- Sidebar -->
-    <aside class="sidebar">
-      <h3>Sections</h3>
-      <ul>
-        <li><a href="#soups">Soups & Ramen</a></li>
-        <li><a href="#mains">Main Courses</a></li>
-        <li><a href="#desserts">Desserts</a></li>
+<!-- HEADER / NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold text-white" href="index.html">Oishiro</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="menu.html">Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="indexr.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
       </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- GRID LAYOUT -->
+<div class="container-fluid mt-4">
+  <div class="row">
+    <!-- SIDEBAR -->
+    <aside class="col-lg-3 col-md-4">
+      <div class="sidebar p-4 bg-white shadow-sm rounded-4">
+        <h4 class="text-danger fw-bold mb-3">Sections</h4>
+        <ul class="list-unstyled fs-5">
+          <li><a href="index.html" class="text-dark text-decoration-none d-block py-1">Welcome</a></li>
+          <li><a href="index.html" class="text-dark text-decoration-none d-block py-1">Season Specials</a></li>
+          <li><a href="index.html" class="text-dark text-decoration-none d-block py-1">Our Chefs</a></li>
+        </ul>
+      </div>
     </aside>
 
 
-    <!-- Main -->
-    <main class="main-container">
+    <!-- MAIN -->
+    <main class="col-lg-9 col-md-8">
 
-
-      <!-- Hero -->
-      <section class="menu-hero">
-        <div class="menu-hero-left">
-          <h2>Our Menu</h2>
-          <p>Discover the authentic taste of Japanese cuisine crafted by our chefs!</p>
+      <!-- === INTRO SECTION === -->
+      <section class="intro-section d-flex align-items-center justify-content-between flex-wrap p-4 rounded-4 shadow-sm bg-light-pink mb-5">
+        <div class="text-center text-md-start">
+          <h1 class="fw-bold text-danger mb-3">Welcome to Oishiro Restaurant</h1>
+          <p class="lead text-secondary mb-0">Experience authentic Japanese flavors crafted by master chefs.</p>
         </div>
-        <div class="menu-hero-right">
-          <div class="menu-bowl-wrapper">
-            <img src="image/bowl_home.png" alt="Menu" class="menu-bowl">
+        <img src="image/bowl_home.png" alt="Bowl" class="bowl-img img-fluid shadow-sm mt-3 mt-md-0">
+      </section>
+
+      <!-- 🥢 SOUPS & RAMEN -->
+      <section id="soups" class="menu-section bg-white p-4 rounded-4 shadow-sm mb-5">
+        <h2 class="text-center text-danger mb-5">Soups & Ramen</h2>
+
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-4 col-sm-6">
+            <div class="menu-card text-center p-3">
+              <img src="image/ramen_deluxe.jpg" alt="Miso Soup" class="menu-img mb-3">
+              <h5 class="fw-bold text-danger">Miso Soup</h5>
+              <p class="text-muted mb-2">Traditional soup made from miso paste, tofu, and seaweed.</p>
+              <p class="fw-semibold text-dark">$6</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="menu-card text-center p-3">
+              <img src="image/tonkotsu_ramen.jpg" alt="Tonkotsu Ramen" class="menu-img mb-3">
+              <h5 class="fw-bold text-danger">Tonkotsu Ramen</h5>
+              <p class="text-muted mb-2">Rich pork broth ramen topped with chashu, egg, and bamboo shoots.</p>
+              <p class="fw-semibold text-dark">$14</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="menu-card text-center p-3">
+              <img src="image/shoyo_ramen.jpg" alt="Shoyu Ramen" class="menu-img mb-3">
+              <h5 class="fw-bold text-danger">Shoyu Ramen</h5>
+              <p class="text-muted mb-2">Soy-sauce based ramen with sliced pork and vegetables.</p>
+              <p class="fw-semibold text-dark">$13</p>
+            </div>
           </div>
         </div>
       </section>
-      
 
+      <!-- 🍱 MAIN COURSES -->
+      <section id="main" class="menu-section bg-white p-4 rounded-4 shadow-sm mb-5">
+        <h2 class="text-center text-danger mb-5">Main Courses</h2>
 
-<!-- Main Courses -->
-<section id="mains">
-  <h2 class="section-title">🍝 Main Courses</h2>
-  <div class="menu-grid">
-    <div class="menu-item">
-      <img src="image/katsudon.jpg" alt="Katsudon">
-      <div class="overlay"><p>Pork cutlet rice bowl</p></div>
-      <h3>Katsudon</h3>
-      <p>Deep-fried pork cutlet served over rice with egg and sweet soy sauce.</p>
-      <strong>$13</strong>
-    </div>
-    <div class="menu-item">
-      <img src="image/Salmon_Teriyaki.jpg" alt="Salmon Teriyaki Steak">
-      <div class="overlay"><p>Grilled salmon teriyaki</p></div>
-      <h3>Salmon Teriyaki</h3>
-      <p>Grilled salmon glazed with teriyaki sauce, served with rice and salad.</p>
-      <strong>$18</strong>
-    </div>
-    <div class="menu-item">
-      <img src="image/sashimi_set.jpg" alt="Sashimi Set">
-      <div class="overlay"><p>Assorted sashimi set</p></div>
-      <h3>Sashimi Set</h3>
-      <p>Assorted fresh sashimi: tuna, salmon, yellowtail, and white fish.</p>
-      <strong>$22</strong>
-    </div>
-  </div>
-</section>
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-4 col-sm-6">
+            <div class="menu-card text-center p-3">
+              <img src="image/katsudon.jpg" alt="Katsudon" class="menu-img mb-3">
+              <h5 class="fw-bold text-danger">Katsudon</h5>
+              <p class="text-muted mb-2">Deep-fried pork cutlet served over rice with egg and sweet soy sauce.</p>
+              <p class="fw-semibold text-dark">$13</p>
+            </div>
+          </div>
 
+          <div class="col-md-4 col-sm-6">
+            <div class="menu-card text-center p-3">
+              <img src="image/salmon_teriyaki.jpg" alt="Salmon Teriyaki" class="menu-img mb-3">
+              <h5 class="fw-bold text-danger">Salmon Teriyaki</h5>
+              <p class="text-muted mb-2">Grilled salmon glazed with teriyaki sauce, served with rice and salad.</p>
+              <p class="fw-semibold text-dark">$18</p>
+            </div>
+          </div>
 
-<!-- Desserts -->
-<section id="desserts">
-  <h2 class="section-title">🍰 Desserts</h2>
-  <div class="menu-grid">
-    <div class="menu-item">
-      <img src="image/Dorayaki.jpg" alt="Dorayaki">
-      <div class="overlay"><p>Red bean pancake</p></div>
-      <h3>Dorayaki</h3>
-      <p>Fluffy Japanese pancakes filled with sweet red bean paste.</p>
-      <strong>$6</strong>
-    </div>
-    <div class="menu-item">
-      <img src="image/takoyaki.jpg" alt="Takoyaki">
-      <div class="overlay"><p>Octopus balls snack</p></div>
-      <h3>Crispy Takoyaki</h3>
-      <p>Famous Osaka street snack with octopus, topped with bonito flakes.</p>
-      <strong>$9</strong>
-    </div>
-    <div class="menu-item">
-      <img src="image/ice_cream.jpg" alt="Green Tea Ice Cream">
-      <div class="overlay"><p>Green tea ice cream</p></div>
-      <h3>Green Tea Ice Cream</h3>
-      <p>Creamy matcha ice cream with a rich and refreshing flavor.</p>
-      <strong>$5</strong>
-    </div>
-  </div>
-</section>
-
-
-     
-
-
-      <!-- Soups and Ramen -->
-    <section id="soups">
-      <h2 class="section-title">🍲 Soups and Ramen</h2>
-      <div class="menu-grid">
-        <div class="menu-item">
-          <img src="image/soba_soup.jpg" alt="Soba soup">
-          <div class="overlay"><p>Soba noodle soup</p></div>
-          <h3>Soba Soup</h3>
-          <p>Traditional buckwheat noodles in light soy broth with green onions.</p>
-          <strong>$8</strong>
+          <div class="col-md-4 col-sm-6">
+            <div class="menu-card text-center p-3">
+              <img src="image/sashimi_set.jpg" alt="Sashimi Set" class="menu-img mb-3">
+              <h5 class="fw-bold text-danger">Sashimi Set</h5>
+              <p class="text-muted mb-2">Assorted fresh sashimi: tuna, salmon, yellowtail, and white fish.</p>
+              <p class="fw-semibold text-dark">$22</p>
+            </div>
+          </div>
         </div>
-        <div class="menu-item">
-          <img src="image/ramen_deluxe.jpg" alt="Ramen Deluxe">
-          <div class="overlay"><p>Pork ramen with shrimp</p></div>
-          <h3>Ramen Deluxe</h3>
-          <p>Rich pork broth ramen with shrimp, egg, nori, and fresh vegetables.</p>
-          <strong>$14</strong>
+      </section>
+
+      <!-- 🍡 DESSERTS -->
+      <section id="desserts" class="menu-section bg-white p-4 rounded-4 shadow-sm mb-5">
+        <h2 class="text-center text-danger mb-5"> Desserts</h2>
+
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-4 col-sm-6">
+            <div class="menu-card text-center p-3">
+              <img src="image/ice_cream.jpg" alt="Mochi Ice Cream" class="menu-img mb-3">
+              <h5 class="fw-bold text-danger">Mochi Ice Cream</h5>
+              <p class="text-muted mb-2">Soft rice cake filled with creamy ice cream — green tea, mango, or vanilla.</p>
+              <p class="fw-semibold text-dark">$8</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="menu-card text-center p-3">
+              <img src="image/matcha_cheesecake.jpg" alt="Matcha Cake" class="menu-img mb-3">
+              <h5 class="fw-bold text-danger">Matcha Cake</h5>
+              <p class="text-muted mb-2">Fluffy sponge cake infused with matcha and topped with cream.</p>
+              <p class="fw-semibold text-dark">$9</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="menu-card text-center p-3">
+              <img src="image/dorayaki.jpg" alt="Dorayaki" class="menu-img mb-3">
+              <h5 class="fw-bold text-danger">Dorayaki</h5>
+              <p class="text-muted mb-2">Sweet pancakes filled with red bean paste — a Japanese classic.</p>
+              <p class="fw-semibold text-dark">$7</p>
+            </div>
+          </div>
         </div>
-        <div class="menu-item">
-          <img src="image/shoyo_ramen.jpg" alt="Shoyu Ramen">
-          <div class="overlay"><p>Soy sauce ramen</p></div>
-          <h3>Shoyu Ramen</h3>
-          <p>Classic soy sauce ramen with chicken, bamboo shoots, and soft egg.</p>
-          <strong>$12</strong>
-        </div>
-      </div>
-    </section>
-
-
-   
-
-     
- 
-
-
+      </section>
     </main>
 
 
-    <!-- Footer -->
-    <footer class="footer">
-      <p>Team: Oishiro | Members: Li Danel, Kuzhentayeva Ramina</p>
-    </footer>
+<!-- FOOTER -->
+<footer class="bg-danger text-white text-center py-3 mt-5">
+  <p class="mb-0">Team: Oishiro | Members: Li Danel, Kuzhentayeva Ramina</p>
+</footer>
 
-
-  </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 45bec12e70eb656d7bf489f622a2d6ba9fc4fe18
